@@ -1,0 +1,184 @@
+<% layout("/layouts/boilerplate") %>
+  <body>
+    <!-- <%= success %> -->
+    <!-- <h3>All Listings</h3> -->
+    <!-- <form method="GET" action="/listings/new">
+      <button>Create New Listing</button>
+    </form> -->
+    <link rel="stylesheet" href="/css/filter.css">
+
+    <div class="filters-main">
+      <div id="filters">
+          <div class="left_img_button" id="slideButton" style="display: none;">
+              <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <a href="/listings/">
+              <div class="filter ALL ps-2 pe-2">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p style="text-decoration: none;">ALL</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Beachfront">
+              <div class="filter Beachfront">            
+                <div><i class="fa-solid fa-umbrella-beach" style="width: 25px; height: 25px;"></i></div>
+                  <p>Beachfront</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Cabins">
+              <div class="filter Cabins">
+                <div><i class="fa-solid fa-igloo" style="width: 25px; height: 25px;"></i></div>
+                  <p>&nbsp;Cabins&nbsp;</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Omg">
+              <div class="filter OMG">
+                <div><i class="fa-brands fa-superpowers" style="width: 25px; height: 25px;"></i></div>
+                  <p>&nbsp;OMG!&nbsp;</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Lake">
+              <div class="filter Lake">
+                <div><i class="fa-solid fa-water" style="width: 25px; height: 25px;"></i></div>
+                  <p>&nbsp;Lake&nbsp;</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Design">
+              <div class="filter Design">
+                <div><i class="fa-solid fa-landmark-dome" style="width: 25px; height: 25px;"></i></div>
+                  <p>&nbsp;Design&nbsp;</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Amazing Pools">
+              <div class="filter Amazing-pools">
+                <div><i class="fa-solid fa-person-swimming" style="width: 25px; height: 25px;"></i></div>
+                  <p>Amazing pools</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Farms">
+              <div class="filter Farms">
+                
+                <div><i class="fa-solid fa-wheat-awn" style="width: 25px; height: 25px;"></i></div>
+                  <p>&nbsp;Farms&nbsp;</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Amazing Views">
+              <div class="filter Amazing-views">
+                
+                <div><i class="fa-solid fa-mountain-sun" style="width: 25px; height: 25px;"></i></div>
+                  <p>Amazing views</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Rooms">
+              <div class="filter Rooms">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>&nbsp;Rooms&nbsp;</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Lakefront">
+              <div class="filter Lakefront">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Lakefront</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Tiny Homes">
+              <div class="filter Tiny-homes">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Tiny homes</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Countryside">
+              <div class="filter Countryside">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Countryside</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Treehouse">
+              <div class="filter Treehouse">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Treehouse</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Trending">
+              <div class="filter Trending">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Trending</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Tropical">
+              <div class="filter Tropical">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Tropical</p>
+              </div>
+          </a>
+          <a href="/listings/filter/National Parks">
+              <div class="filter National-parks">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>National parks</p>
+              </div>
+          </a>
+          <a href="/listings/filter/Castles">
+              <div class="filter Castles">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Castles</p>
+              </div>
+              </a>
+          <a href="/listings/filter/Camping">
+              <div class="filter Camping">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Camping</p>
+              </div>
+              </a>
+          <a href="/listings/filter/Top Of The World">
+              <div class="filter Top-of-the-world">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Top of the world</p>
+              </div>
+              </a>
+          <a href="/listings/filter/Luxe">
+              <div class="filter Luxe">
+                 <div><i class="fa-solid fa-border-top-left" style="width: 25px; height: 25px;"></i></div>
+                  <p>&nbsp;Luxe&nbsp;</p>
+              </div>
+              </a>
+          <a href="/listings/filter/Iconic Cities">
+              <div class="filter Iconic-cities">
+                <div><i class="fa-solid fa-mountain-city" style="width: 25px; height: 25px;"></i></div>
+                  <p>Iconic cities</p>
+              </div>
+              </a>
+          <a href="/listings/filter/Earth Homes">
+              <div class="filter Earth-homes">
+                  <div><i class="fa-solid fa-house" style="width: 25px; height: 25px;"></i></div>
+                  <p>Earth homes</p>
+              </div>
+          </a>
+          <div class="right_img_button" id="slideButton">
+              <i class="fa-solid fa-angle-right"></i>
+          </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <% for(let listing of allListings) { %>
+            <a href="/listings/<%=listing._id%>" class="listing-link">
+            <div class="card col listing-card">
+                <img src="<%=listing.image.url%>" class="card-img-top" alt="listing_image" style="height: 20rem;">
+                <div class="card-img-overlay"></div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <b><%=listing.title%></b><br>
+                    <%=listing.price.toLocaleString("en-IN")%> /day
+                </p>
+                </div>
+              </div>
+            </a>
+        <% } %>      
+    </div>
+    <!-- <ul>
+      <% for(let listing of allListings) { %>
+      <li><a href="/listings/<%= listing._id %>"> <%= listing.title %> </a></li>
+      <% } %>
+    </ul> -->
+  </body>
+
+  <script src="/js/filter.js"></script>
